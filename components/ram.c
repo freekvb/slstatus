@@ -50,7 +50,7 @@
 	{
 		uintmax_t total;
 
-		if (pscanf("/proc/meminfo", "MemTotal: %ju kB\n", &total)
+		if (pscanf("/proc/meminfo", "MemTotal: %juk B\n", &total)
 		    != 1) {
 			return NULL;
 		}
